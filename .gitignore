@@ -16,6 +16,9 @@ bld/
 [Bb]in/
 [Oo]bj/
 
+#svn
+.svn/
+
 # Roslyn cache directories
 *.ide/
 
