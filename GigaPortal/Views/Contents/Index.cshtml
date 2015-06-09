@@ -1,0 +1,53 @@
+﻿@model IEnumerable<GigaPortalData.Models.Collections.GPPagesCollection>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+   Создать: @Html.ActionLink("Библиотеку страниц", "Create")|@Html.ActionLink("Библиотеку новостей", "CreateNewses") 
+</p>
+
+<table style="width:100%">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Creator)
+        </th>
+        
+    </tr>
+    @if (ViewBag.NewsesCollections.Count>0){
+        <tr style="border-bottom: 1px solid #000;"><td colspan="4" ><b>Коллекции новостей</b></td></tr>
+        @Html.Partial("PartialGPObjectList", (List<GigaPortalData.Interfaces.IGPObject>)ViewBag.NewsesCollections)
+        <tr><td colspan="4"></td></tr>
+    }
+
+    @if (ViewBag.PagesCollections.Count > 0)
+    {
+        <tr style="border-bottom: 1px solid #000;"><td colspan="4"><b>Библиотеки страниц</b></td></tr>
+        @Html.Partial("PartialGPObjectList", (List<GigaPortalData.Interfaces.IGPObject>)ViewBag.PagesCollections)
+        <tr><td colspan="4"></td></tr>
+    }
+
+    @if (ViewBag.SubWebs.Count > 0)
+    {
+        <tr style="border-bottom: 1px solid #000;"><td colspan="4">Подсайты</td></tr>
+        @Html.Partial("PartialGPObjectList", (List<GigaPortalData.Interfaces.IGPObject>)ViewBag.SubWebs)
+        <tr><td colspan="4"></td></tr>
+    }
+
+
+
+
+    </table>

@@ -1,0 +1,57 @@
+﻿@model GigaPortalData.Models.Collections.GPPagesCollection
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>GPPagesCollection</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CollectionType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CollectionType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CurrentWeb.Url)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CurrentWeb.Url)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreateDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreateDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Creator)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Creator)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

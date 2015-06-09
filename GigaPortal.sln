@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GigaPortal", "GigaPortal\GigaPortal.csproj", "{526CF52B-3EC2-4093-ADAC-96C9D1842801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GigaPortalDataModel", "PortalDataModel\GigaPortalDataModel.csproj", "{C17EBB9D-7C21-4DB4-9EBB-5405FC1DFBE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GigaPortalAuthorization", "GigaPortalAuthorization\GigaPortalAuthorization.csproj", "{D5B19B58-C463-4CAB-A39A-9F37168FF098}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{526CF52B-3EC2-4093-ADAC-96C9D1842801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526CF52B-3EC2-4093-ADAC-96C9D1842801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526CF52B-3EC2-4093-ADAC-96C9D1842801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526CF52B-3EC2-4093-ADAC-96C9D1842801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C17EBB9D-7C21-4DB4-9EBB-5405FC1DFBE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17EBB9D-7C21-4DB4-9EBB-5405FC1DFBE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17EBB9D-7C21-4DB4-9EBB-5405FC1DFBE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17EBB9D-7C21-4DB4-9EBB-5405FC1DFBE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B19B58-C463-4CAB-A39A-9F37168FF098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B19B58-C463-4CAB-A39A-9F37168FF098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B19B58-C463-4CAB-A39A-9F37168FF098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B19B58-C463-4CAB-A39A-9F37168FF098}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

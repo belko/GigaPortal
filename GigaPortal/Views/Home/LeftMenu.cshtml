@@ -1,0 +1,7 @@
+﻿@model IEnumerable<GigaPortal.Models.NavLink>
+
+<ul id="menu">
+        @foreach (var link in Model){
+            <li>@Html.RouteLink(link.Text, link.RouteValues)</li>
+        }
+  </ul>
